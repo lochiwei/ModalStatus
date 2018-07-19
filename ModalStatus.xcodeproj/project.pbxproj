@@ -8,12 +8,16 @@
 
 /* Begin PBXBuildFile section */
 		1A7962C521001A9000D5A4FD /* ModalStatus.h in Headers */ = {isa = PBXBuildFile; fileRef = 1A7962C321001A9000D5A4FD /* ModalStatus.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1A7962CC21001AF900D5A4FD /* ModalStatusView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A7962CB21001AF900D5A4FD /* ModalStatusView.swift */; };
+		1A7962CE21001B3100D5A4FD /* ModalStatusView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1A7962CD21001B3100D5A4FD /* ModalStatusView.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		1A7962C021001A9000D5A4FD /* ModalStatus.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ModalStatus.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		1A7962C321001A9000D5A4FD /* ModalStatus.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ModalStatus.h; sourceTree = "<group>"; };
 		1A7962C421001A9000D5A4FD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1A7962CB21001AF900D5A4FD /* ModalStatusView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModalStatusView.swift; sourceTree = "<group>"; };
+		1A7962CD21001B3100D5A4FD /* ModalStatusView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ModalStatusView.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -48,6 +52,8 @@
 			children = (
 				1A7962C321001A9000D5A4FD /* ModalStatus.h */,
 				1A7962C421001A9000D5A4FD /* Info.plist */,
+				1A7962CB21001AF900D5A4FD /* ModalStatusView.swift */,
+				1A7962CD21001B3100D5A4FD /* ModalStatusView.xib */,
 			);
 			path = ModalStatus;
 			sourceTree = "<group>";
@@ -95,6 +101,7 @@
 				TargetAttributes = {
 					1A7962BF21001A9000D5A4FD = {
 						CreatedOnToolsVersion = 9.4.1;
+						LastSwiftMigration = 0940;
 					};
 				};
 			};
@@ -120,6 +127,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1A7962CE21001B3100D5A4FD /* ModalStatusView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -130,6 +138,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1A7962CC21001AF900D5A4FD /* ModalStatusView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -259,6 +268,7 @@
 		1A7962C921001A9000D5A4FD /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -276,6 +286,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.lochiwei.ModalStatus;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -284,6 +295,7 @@
 		1A7962CA21001A9000D5A4FD /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
